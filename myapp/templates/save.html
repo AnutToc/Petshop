@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h1>Welcome to Purr~</h1>
+    <p>We offer a wide variety of high-quality Cat products at affordable prices.</p>
+    <a href="#" class="btn btn-primary btn-lg">Facebook Page</a>
+  </div>
+
+  <div class="container-fluid">
+    <h2 class="text-center">Featured Products</h2>
+    <div class="row justify-content-center">
+      {% for product in products %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" style="text-align:center;">
+          {% comment %} <img src="{{ product.image.url }}" alt="{{ product.name }}"> {% endcomment %}
+          <div class="caption" style="display:inline-block; text-align:left;">
+            <p style="display:inline-block;">
+              {% load static %} <img src="{% static "premium.jpg" %}" alt="" style="display: block; margin: auto;"/>
+              {% load static %} <img src="{% static "whiskas.jpg" %}" alt="" style="display: block; margin: auto;"/>
+            </p>
+            <h3 style="text-align:center;">{{ product.name }}</h3>
+            <p style="text-align:center;">{{ product.description }}</p>
+            <p style="text-align:center;">{{ product.price }}</p>
+            <p style="text-align:center;"><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+{% endblock %}

@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PET SHOP - Pet Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'petshop_template/img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="{% static 'petshop_template/lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'petshop_template/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'petshop_template/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'petshop_template/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="../petshop" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-white logo-text"><img src="../static/petshop_template/img/logo.png" alt="Logo" class="logo-image">Purr~</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">About</a>
+                <a href="#" class="nav-item nav-link">Service</a>
+                <a href="#" class="nav-item nav-link">Product</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">Pricing Plan</a>
+                        <a href="#" class="dropdown-item">The Team</a>
+                        <a href="#" class="dropdown-item">Testimonial</a>
+                        <a href="#" class="dropdown-item">Blog Grid</a>
+                        <a href="#" class="dropdown-item">Blog Detail</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link nav-contact custom-navbar text-white px-5 ms-lg-10">Contact <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="text-uppercase text-white mb-lg-4 ">Make Your Cats Happy</h1>
+                    <p class="fs-4 text-white mb-lg-4">We offer a wide range of high quality Cat products at affordable prices for your Cat.</p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="#" class="btn btn-outline-light border-2 py-md-3 px-md-5 me-5 bg">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-light ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-light text-uppercase">Services</h6>
+                <h1 class="display-5 text-light text-uppercase mb-0">Our Excellent Cat Care Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-house display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Cat Boarding</h5>
+                            <p>All Rooms are Air-conditioned and 2.50 meters High (Exclusive of Food & Litter)</p>
+                            <a class="text-dark text-uppercase" href="#">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-food display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Cat Feeding</h5>
+                            <p>Feed your cat tinned and dried cat food and twice a day</p>
+                            <a class="text-dark text-uppercase" href="#">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-grooming display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Cat Grooming</h5>
+                            <p>Skin and Fur Care, Ear Care, Paw and Nail Care, Dental Care, Eye Care</p>
+                            <a class="text-dark text-uppercase" href="#">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-cat display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Cat Training</h5>
+                            <p>Clicker training, Hand signals, Voice cues</p>
+                            <a class="text-dark text-uppercase" href="#">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-cat display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Cat Exercise</h5>
+                            <p>Controlled access to the outdoors, Plenty of toys and playtime, Lots to scratch, Different things to explore, Puzzle feeders</p>
+                            <a class="text-dark text-uppercase" href="#">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-vaccine display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Cat Treatment</h5>
+                            <p>Desexing, Vaccinations, Parasites control – fleas, mites and worms, Dental care, Checking for signs of ill health</p>
+                            <a class="text-dark text-uppercase" href="#">Read More<i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-light ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-light text-uppercase">Products</h6>
+                <h1 class="display-5 text-light text-uppercase mb-0">Products For Your Best Friends</h1>
+            </div>
+            <div class="owl-carousel product-carousel">
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="{% static 'petshop_template/img/product-1.png' %}" alt="">
+                        <h6 class="text-uppercase">Quality Cat Foods</h6>
+                        <h5 class="text-dark mb-0">$199.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="{% static 'petshop_template/img/product-2.png' %}" alt="">
+                        <h6 class="text-uppercase">Quality Cat Foods</h6>
+                        <h5 class="text-dark mb-0">$199.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="{% static 'petshop_template/img/product-3.png' %}" alt="">
+                        <h6 class="text-uppercase">Quality Cat Foods</h6>
+                        <h5 class="text-dark mb-0">$199.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="{% static 'petshop_template/img/product-4.png' %}" alt="">
+                        <h6 class="text-uppercase">Quality Cat Foods</h6>
+                        <h5 class="text-dark mb-0">$199.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="{% static 'petshop_template/img/product-2.png' %}" alt="">
+                        <h6 class="text-uppercase">Quality Cat Foods</h6>
+                        <h5 class="text-dark mb-0">$199.00</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-outline-light py-2 px-3" style="background-color: #2E878E;" href="#"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Get In Touch</h5>
+                    {% comment %} <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p> {% endcomment %}
+                    <p class="mb-2"><i class="bi bi-geo-alt text-dark me-2"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-dark me-2"></i>info@example.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-dark me-2"></i>+012 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Our Services</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Meet The Team</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Latest Blog</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Popular Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Our Services</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Meet The Team</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Latest Blog</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-dark me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Newsletter</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Your Email">
+                            <button class="btn btn-dark">Sign Up</button>
+                        </div>
+                    </form>
+                    <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-dark btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-dark btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-dark btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="#">Terms & Conditions</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="#">Privacy Policy</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="#">Customer Support</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="#">Payments</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="#">Help</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="#">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white-50 py-4" style="background-color: #2E878E;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-light py-3 fs-4 back-to-top" style="background-color: #2E878E;"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'petshop_template/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'petshop_template/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'petshop_template/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+   <!-- Template Javascript -->
+    <script src="{% static 'petshop_template/js/main.js' %}"></script>
+
+</body>
+</html>
