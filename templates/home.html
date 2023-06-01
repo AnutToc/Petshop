@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+<h1>Welcome to our shop!</h1>
+<ul>
+{% comment %} {% for product in products %}
+    <li>{{ product.name }} - {{ product.description }} - {{ product.price }}</li>
+{% endfor %} {% endcomment %}
+<a href="main/" class="btn btn-primary btn-lg">Shop Now</a>
+</div>
+</ul>
+{% endblock %}
